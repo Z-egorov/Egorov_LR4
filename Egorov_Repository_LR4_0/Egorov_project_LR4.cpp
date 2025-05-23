@@ -2,7 +2,7 @@
 #include <map>
 #include <string>
 #include <functional>
-
+#include <math.h>
 
 int side1;
 
@@ -47,6 +47,7 @@ void enterSide1()
 void calcArea()
 {
     //разрабатывается Developer3 - ветка branch_fun_2
+    std::cout << side1 * sqrt(3)/4<< '\n';
 }
 
 void calcPerim()
