@@ -41,6 +41,7 @@ void enterNumber(int& varLink, std::string label) {
 void enterSide1()
 {
     //разрабатывается Developer1 - ветка branch_fun_1
+    std::cin >> side1;
 }
 
 void calcArea()
