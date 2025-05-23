@@ -51,7 +51,7 @@ void calcArea()
 void calcPerim()
 {
     //разрабатывается Developer4 - ветка branch_fun_3
-
+    std::cout << 3 * side1 << '\n';
 }
 
 struct MenuItem {
