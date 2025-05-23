@@ -4,7 +4,7 @@
 #include <functional>
 
 
-int side1, side2;
+int side1;
 
 // Проверка корректности вводимых данных
 bool UserInput(std::string input) {
@@ -43,19 +43,15 @@ void enterSide1()
     //разрабатывается Developer1 - ветка branch_fun_1
 }
 
-void enterSide2()
-{
-    //разрабатывается Developer2 - ветка branch_fun_2
-}
-
 void calcArea()
 {
-    //разрабатывается Developer3 - ветка branch_fun_3
+    //разрабатывается Developer3 - ветка branch_fun_2
 }
 
 void calcPerim()
 {
-    //разрабатывается Developer4 - ветка branch_fun_4
+    //разрабатывается Developer4 - ветка branch_fun_3
+
 }
 
 struct MenuItem {
@@ -66,9 +62,8 @@ struct MenuItem {
 int main() {
     std::map<int, MenuItem> menu = {
         {1, {"Ввод 1-й стороны прямоугольника", enterSide1}},
-        {2, {"Ввод 2-й стороны прямоугольника", enterSide2}},
-        {3, {"Calculate of Area", calcArea}},
-        {4, {"Calculate of Perimetr", calcPerim}}
+        {2, {"Calculate of Area", calcArea}},
+        {3, {"Calculate of Perimetr", calcPerim}}
     };
 
     int choice = 0;
